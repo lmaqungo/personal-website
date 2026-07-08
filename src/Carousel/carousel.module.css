@@ -1,0 +1,23 @@
+
+@reference "tailwindcss"; 
+
+.carouselOuter{
+    @apply select-none max-w-full aspect-3/2 min-h-auto bg-black sm:rounded-2xl rounded-lg flex justify-center items-center relative;    
+}
+
+.carouselFooter{
+    @apply transition-all ease-in duration-200 absolute  opacity-0;
+}
+
+.carouselOuter:hover .carouselFooter{
+    @apply opacity-100;
+}
+
+.carouselOuter:hover .projectLabel{
+    @apply opacity-100;
+}
+
+.projectLabel{
+    @apply flex gap-4 items-center rounded-md py-0.5 px-3 bg-[#BEBEBE] cursor-pointer hover:bg-[#F5F5DC] transition-all ease-in duration-200 opacity-0; 
+    @apply absolute top-2.5 left-2.5; 
+}
