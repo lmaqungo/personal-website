@@ -1,7 +1,7 @@
 
-import shoppingCart from '../assets/desktop-demo.png'; 
-import cvGenerator from '../assets/screenshot-desktop.png'; 
-import socialMedia from '../assets/screenshot1.png'; 
+import shoppingCart from '../assets/brick-and-order.png'; 
+import cvGenerator from '../assets/the-resume.png'; 
+import socialMedia from '../assets/brain-rot.png'; 
 
 import styles from './carousel.module.css'
 
@@ -91,7 +91,7 @@ function Carousel() {
 
     <div onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} className={styles.carouselOuter} >
         <ProjectLabel project={projects.find(item => item.id === activeItem )} />
-        <div className={`max-w-8/10 max-h-auto`} >
+        <div className={`max-w-9/10 max-h-auto`} >
             <img src={projects.find(item => item.id === activeItem ).img} alt="" className='w-full h-auto' />
         </div>
         <div className={`flex gap-2 bottom-2.5 left-2.5 ${styles.carouselFooter}`} >

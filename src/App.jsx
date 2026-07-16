@@ -25,16 +25,22 @@ function App() {
 return (
   <div className='min-h-screen bg-neutral-100 flex justify-center py-12 px-8 text-sm ' >
     <div className='max-w-xl min-h-full flex flex-col gap-8 justify-between sm:justify-start ' >
-      <p>Luyanda Maqungo<span className='text-gray-400' > — Software Engineer</span></p>
-      <div className='flex flex-col gap-2.5' >
-        <p className='whitespace-pre-line' >
-          {
-            `I am a South Africa based software engineer who specializes in building web applications, with experience in React, Tailwind CSS, and Nodejs. 
-            If you need somebody reliable to build your product, I'm here to help.`
-          }
-          </p>
-        <p >Read my <a className='transition duration-500 cursor-pointer p-1 bg-[#DBDBDB] rounded-sm hover:bg-[#BEBEBE]' >cv</a> or see my <a target='_blank' href='https://github.com/lmaqungo' className='transition duration-500 cursor-pointer p-1 bg-[#DBDBDB] rounded-sm hover:bg-[#BEBEBE]' >work</a>. </p>
+      <div className='flex justify-between' >
+        <div className='flex flex-col' >
+          <p>Luyanda Maqungo</p>
+          <p className='text-gray-400' >Software Engineer</p>
+        </div>
+        <div className='flex gap-8' >
+          <a className='underline hover:no-underline hover:text-[#777777] transition' href='' >cv</a>
+          <a className='underline hover:no-underline hover:text-[#777777] transition' href='' >work</a>
+        </div>
       </div>
+      <p className='whitespace-pre-line' >
+        {
+          `I am a South Africa-based software engineer who specializes in building web applications, with experience in React, Tailwind CSS, and Nodejs. 
+          If you need somebody reliable to build your product, I'm here to help.`
+        }
+        </p>
       <Carousel />
       <div className='text-center flex flex-col items-center gap-2.5' >
           <p className='font-bold' >Get in Touch</p>
