@@ -35,7 +35,7 @@ return (
           <a className='underline hover:no-underline hover:text-[#777777] transition' href='' >work</a>
         </div>
       </div>
-      <p className='whitespace-pre-line' >
+        <p className='whitespace-pre-line' >
         {
           `I am a South Africa-based software engineer who specializes in building web applications, with experience in React, Tailwind CSS, and Nodejs. 
           If you need somebody reliable to build your product, I'm here to help.`
