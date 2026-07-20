@@ -2,7 +2,7 @@
 @reference "tailwindcss"; 
 
 .carouselOuter{
-    @apply select-none max-w-full aspect-3/2 min-h-auto bg-black sm:rounded-2xl rounded-lg flex justify-center items-center relative;    
+    @apply select-none max-w-full aspect-3/2 min-h-auto sm:rounded-2xl rounded-lg flex justify-center items-center relative;    
 }
 
 .carouselFooter{

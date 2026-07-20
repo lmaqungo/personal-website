@@ -5,7 +5,7 @@ import socialMedia from '../assets/brain-rot.png';
 
 import styles from './carousel.module.css'
 
-import Arrow from '../Arrow';
+import Arrow from '../Arrow'
 
 import { useState, useEffect } from 'react';
 
@@ -53,16 +53,19 @@ function Carousel() {
             name: 'Brick & Order', 
             link: 'https://github.com/lmaqungo/shopping-cart', 
             img: shoppingCart, 
+            slideColor: 'white'
         }, 
         {   id: 1, 
             name: 'TheResume', 
             link: 'https://github.com/lmaqungo/cv-application',
             img: cvGenerator, 
+            slideColor: '#F7F5F4'
         }, 
         {   id: 2, 
             name: 'Brainrot', 
             link: 'https://github.com/lmaqungo/social-media',
             img: socialMedia, 
+            slideColor: 'black'
         }, 
     ]
 
@@ -89,9 +92,9 @@ function Carousel() {
 
   return (
 
-    <div onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} className={styles.carouselOuter} >
+    <div onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} style={{backgroundColor:projects.find(item => item.id === activeItem ).slideColor } } className={styles.carouselOuter} >
         <ProjectLabel project={projects.find(item => item.id === activeItem )} />
-        <div className={`max-w-9/10 max-h-auto`} >
+        <div className={`max-w-full max-h-auto`} >
             <img src={projects.find(item => item.id === activeItem ).img} alt="" className='w-full h-auto' />
         </div>
         <div className={`flex gap-2 bottom-2.5 left-2.5 ${styles.carouselFooter}`} >
