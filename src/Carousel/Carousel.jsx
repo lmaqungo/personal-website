@@ -95,7 +95,7 @@ function Carousel() {
     <div onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} style={{backgroundColor:projects.find(item => item.id === activeItem ).slideColor } } className={styles.carouselOuter} >
         <ProjectLabel project={projects.find(item => item.id === activeItem )} />
         <div className={`max-w-full max-h-auto`} >
-            <img src={projects.find(item => item.id === activeItem ).img} alt="" className='w-full h-auto' />
+            <img loading="lazy" src={projects.find(item => item.id === activeItem ).img} alt="" className='w-full h-auto' />
         </div>
         <div className={`flex gap-2 bottom-2.5 left-2.5 ${styles.carouselFooter}`} >
             <Arrow onClick={prevSlide} />
